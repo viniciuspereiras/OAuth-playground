@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Panel{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>Index</h1>
+  <center>
+  <p class="important">
+    Hello {{user_info['name']}}, welcome on my awesome homepage.
+    </p>
+    <img src="{{user_info['picture']}}" alt="{{user_info['name']}}" style="width: 200px; height: 200px;">
+    <br>
+    <a href="logout"><i class="fas fa-sign-out-alt"></i></a>
+</center>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <center>
+    <h1>Oauth Playground</h1>
+    <p class="important">
+      choose an option to log in:
+    </p>
+    <h1><a href="{{url_google}}"><i style="height: 100px;" class="fab fa-google"></i></a></h1>
+
+  </center>
+{% endblock %}
